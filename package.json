@@ -1,0 +1,56 @@
+{
+  "name": "postcss-100vh-fix",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to fix height/min-height: 100vh on iOS",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "100vh",
+    "safari",
+    "height",
+    "min-height",
+    "-webkit-fill-available"
+  ],
+  "scripts": {
+    "test": "jest --coverage && eslint ."
+  },
+  "author": "Andrey Sitnik <andrey@sitnik.ru>",
+  "license": "MIT",
+  "repository": "postcss/postcss-100vh-fix",
+  "dependencies": {
+    "postcss": "^7.0.32"
+  },
+  "devDependencies": {
+    "@logux/eslint-config": "^40.0.1",
+    "clean-publish": "^1.1.8",
+    "eslint": "^7.5.0",
+    "eslint-config-postcss": "^4.0.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-es5": "^1.5.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.18.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-let": "^1.0.2",
+    "eslint-plugin-prettierx": "^0.12.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-unicorn": "^21.0.0",
+    "jest": "^26.1.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
+  }
+}
