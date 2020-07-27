@@ -1,12 +1,8 @@
 # PostCSS `100vh` Fix
 
 [PostCSS] plugin to fix [iOS’s bug] with `100vh`. It works in Chrome,
-iOS/iPad/MacOS Safari and [all other browers].
+iOS/iPad/MacOS Safari and [all other browsers].
 Pure CSS solution, no JS required.
-
-<img src="https://chanind.github.io/assets/100vh_problem.png"
-     alt="100vh bug illusration by David Chanin"
-     title="By David Chanin">
 
 ```css
 body {
@@ -28,6 +24,10 @@ body {
   }
 }
 ```
+
+<img src="https://chanind.github.io/assets/100vh_problem.png"
+     alt="100vh bug illusration by David Chanin"
+     title="By David Chanin">
 
 It works with `min-height` and `max-height` too.
 
