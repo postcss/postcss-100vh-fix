@@ -16,7 +16,7 @@ body {
   height: 100vh;
 }
 
-/* Avoid Chrome to see iOS hack */
+/* Avoid Chrome to see Safari hack */
 @supports (-webkit-touch-callout: none) {
   body {
     /* The hack for Safari */
