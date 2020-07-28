@@ -27,9 +27,9 @@ body {
 }
 ```
 
-<img src="https://chanind.github.io/assets/100vh_problem.png"
-     alt="100vh bug illusration by David Chanin"
-     title="By David Chanin">
+<img src="https://maximilianschmitt.me/posts/css-100vh-mobile-browsers/lld-minimal-vs-normal-ui@2x.png"
+     alt="100vh bug illusration Max Schmitt"
+     title="By Max Schmitt">
 
 It works with `min-height` and `max-height` too.
 
