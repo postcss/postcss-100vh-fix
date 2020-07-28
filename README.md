@@ -33,6 +33,10 @@ body {
 
 It works with `min-height` and `max-height` too.
 
+If you need to support partial `vh` values (like `90vh`) we recommend
+to use [`postcss-viewport-height-correction`] with JS-based hack.
+
+[`postcss-viewport-height-correction`]: https://github.com/Faisal-Manzer/postcss-viewport-height-correction
 [all other browsers]: https://caniuse.com/#feat=viewport-units
 [iOS’s bug]: https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/
 [PostCSS]: https://github.com/postcss/postcss
