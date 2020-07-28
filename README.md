@@ -33,7 +33,7 @@ body {
 
 It works with `min-height` and `max-height` too.
 
-If you need to support partial `vh` values (like `90vh`) we recommend
+If you need to support partial `vh` values (e.g. `90vh`) we recommend
 to use [`postcss-viewport-height-correction`] with JS-based hack.
 
 [`postcss-viewport-height-correction`]: https://github.com/Faisal-Manzer/postcss-viewport-height-correction
