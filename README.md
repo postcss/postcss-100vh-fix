@@ -1,6 +1,7 @@
 # PostCSS `100vh` Fix
 
-[PostCSS] plugin to fix [iOS’s bug] with `100vh`. It works in Chrome,
+[PostCSS] plugin to fix [iOS’s bug] with `100vh`. It works in Chrome
+(just `-webkit-fill-available` causes problems in Chrome in some cases),
 iOS/iPad/MacOS Safari and [all other browsers].
 Pure CSS solution, no JS required.
 
