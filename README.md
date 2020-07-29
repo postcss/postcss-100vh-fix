@@ -49,11 +49,11 @@ to use [`postcss-viewport-height-correction`] with JS-based hack.
 ## Usage
 
 
-**Step 1:** Check you project for existed PostCSS config: `postcss.config.js`
+**Step 1:** Check your project for existing PostCSS config: `postcss.config.js`
 in the project root, `"postcss"` section in `package.json`
 or `postcss` in bundle config.
 
-If you do not use PostCSS, add it according to [official docs]
+If you do not use PostCSS, add it according to [official docs](https://github.com/postcss/postcss/tree/master/docs)
 and set this plugin in settings.
 
 **Step 2:** Add the plugin to plugins list:
