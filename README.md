@@ -32,11 +32,6 @@ body {
      title="By Max Schmitt">
 
 It works with `min-height` and `max-height` too.
-
-If you need to support partial `vh` values (e.g. `90vh`) we recommend
-to use [`postcss-viewport-height-correction`] with JS-based hack.
-
-[`postcss-viewport-height-correction`]: https://github.com/Faisal-Manzer/postcss-viewport-height-correction
 [all other browsers]: https://caniuse.com/#feat=viewport-units
 [iOS’s bug]: https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/
 [PostCSS]: https://github.com/postcss/postcss
@@ -46,8 +41,25 @@ to use [`postcss-viewport-height-correction`] with JS-based hack.
        alt="Sponsored by Evil Martians" width="236" height="54">
 </a>
 
-## Usage
 
+## Limits
+
+Pure CSS solution is limited. For many cases you need to use JS-based hack like
+[`postcss-viewport-height-correction`]:
+
+Our hack do not work with partial height like `height: 90vh`
+or `height: calc(100vh - 60px)`.
+
+Also, we do not fix Chrome for Android bug:
+
+<img src="https://chanind.github.io/assets/100vh_problem.png"
+     alt="100vh Chrome bug illusration David Chanin"
+     title="By David Chanin">
+
+[`postcss-viewport-height-correction`]: https://github.com/Faisal-Manzer/postcss-viewport-height-correction
+
+
+## Usage
 
 **Step 1:** Check you project for existed PostCSS config: `postcss.config.js`
 in the project root, `"postcss"` section in `package.json`
