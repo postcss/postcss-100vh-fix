@@ -1,5 +1,9 @@
 # PostCSS `100vh` Fix
 
+<img align="right" width="135" height="95"
+     title="Philosopher’s stone, logo of PostCSS"
+     src="https://postcss.org/logo-leftp.svg">
+
 [PostCSS] plugin to fix [iOS’s bug] with `100vh`.
 
 It works in Chrome (just `-webkit-fill-available` causes problems in Chrome
