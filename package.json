@@ -13,37 +13,43 @@
     "-webkit-fill-available"
   ],
   "scripts": {
-    "test": "jest --coverage && eslint ."
+    "test": "jest-ci --coverage && eslint-ci *.js"
   },
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
   "repository": "postcss/postcss-100vh-fix",
-  "dependencies": {
-    "postcss": "^7.0.32"
-  },
   "devDependencies": {
-    "@logux/eslint-config": "^40.0.1",
+    "@logux/eslint-config": "^40.0.3",
     "clean-publish": "^1.1.8",
-    "eslint": "^7.5.0",
-    "eslint-config-postcss": "^4.0.0",
+    "eslint": "^7.7.0",
+    "eslint-ci": "^1.0.0",
     "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-es5": "^1.5.0",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^23.19.0",
+    "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-let": "^1.0.2",
-    "eslint-plugin-prettierx": "^0.12.1",
+    "eslint-plugin-prettierx": "^0.14.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-unicorn": "^21.0.0",
-    "jest": "^26.1.0"
+    "husky": "^4.2.5",
+    "jest": "^26.4.1",
+    "jest-ci": "^0.1.1",
+    "lint-staged": "^10.2.11",
+    "postcss": "postcss/postcss#ose",
+    "postcss-sharec-config": "^0.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
   },
   "eslintConfig": {
-    "extends": "eslint-config-postcss"
-  },
-  "engines": {
-    "node": ">=8.0.0"
+    "extends": "@logux/eslint-config"
   },
   "jest": {
     "testEnvironment": "node",
@@ -52,5 +58,9 @@
         "statements": 100
       }
     }
+  },
+  "sharec": {
+    "config": "postcss-sharec-config",
+    "version": "0.1.0"
   }
 }
