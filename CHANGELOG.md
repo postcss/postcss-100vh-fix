@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.1
+* Add funding links.
+
 ## 1.0
 * Moved to PostCSS 8.
 * Moved `postcss` to `peerDependencies`.
