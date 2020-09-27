@@ -4384,10 +4384,10 @@ postcss-selector-parser@2.2.3:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
-postcss-sharec-config@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/postcss-sharec-config/-/postcss-sharec-config-0.1.7.tgz#bd90a2f5382d57b2b15b610d5954f63f0e16b8ea"
-  integrity sha512-HYEqvgcNXWNBqXa9ZW1s48PRoIJYiRSEMZ1ZfhmHZiOksKUctIscm1hJjyT6Klxu986UB/7LHqJR6e9lOnTb+A==
+postcss-sharec-config@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/postcss-sharec-config/-/postcss-sharec-config-0.1.8.tgz#18afd3d8434fe4708f49775016bfd802152a265b"
+  integrity sha512-WuvDVkpjTbhNswa6jCtu8079crzGhFGYiVQk4XhzQPS8FiE2eWbPnHAoUqSNMNX2wMzfyhB+KHokKlZCX5HO0A==
   dependencies:
     sharec "^2.3.0"
 
