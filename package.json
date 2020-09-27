@@ -1,6 +1,6 @@
 {
   "name": "postcss-100vh-fix",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "PostCSS plugin to fix height/min-height: 100vh on iOS",
   "keywords": [
     "postcss",

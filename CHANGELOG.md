@@ -1,8 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.2
+* Reduced npm package size.
+
 ## 1.0.1
-* Add funding links.
+* Added funding links.
 
 ## 1.0
 * Moved to PostCSS 8.
