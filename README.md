@@ -36,6 +36,7 @@ body {
      title="By Max Schmitt">
 
 It works with `min-height` and `max-height` too.
+
 [all other browsers]: https://caniuse.com/#feat=viewport-units
 [iOS’s bug]: https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/
 [PostCSS]: https://github.com/postcss/postcss
