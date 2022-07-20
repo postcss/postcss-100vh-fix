@@ -76,7 +76,7 @@ npm install --save-dev postcss postcss-100vh-fix
 in the project root, `"postcss"` section in `package.json`
 or `postcss` in bundle config.
 
-If you do not use PostCSS, add it according to [official docs]
+If you do not use PostCSS, add it according to [official docs][PostCSS]
 and set this plugin in settings.
 
 **Step 3:** Add the plugin to plugins list:
