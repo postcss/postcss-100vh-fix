@@ -35,6 +35,15 @@ it('supports max-height', () => {
   )
 })
 
+it('inherits !important flag', () => {
+  run(
+    '.max { max-height: 100vh !important }',
+    '.max { max-height: 100vh !important }\n' +
+      '@supports (-webkit-touch-callout: none) {\n' +
+      ' .max { max-height: -webkit-fill-available !important } }'
+  )
+})
+
 it('ignores non-100vh height', () => {
   run('body { max-height: 100% }', 'body { max-height: 100% }')
 })

@@ -16,6 +16,7 @@ function process (decl, { AtRule, Rule }) {
   media.append(clonedRule)
 
   clonedRule.append({
+    important: decl.important,
     prop: decl.prop,
     value: '-webkit-fill-available',
     source: decl.source
