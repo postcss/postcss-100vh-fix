@@ -18,19 +18,19 @@ function process (decl, { AtRule, Rule }) {
   clonedRule.append({
     important: decl.important,
     prop: decl.prop,
-    value: '-webkit-fill-available',
-    source: decl.source
+    source: decl.source,
+    value: '-webkit-fill-available'
   })
 }
 
 module.exports = () => {
   return {
-    postcssPlugin: 'postcss-100vh-fix',
     Declaration: {
-      'min-height': process,
+      'height': process,
       'max-height': process,
-      'height': process
-    }
+      'min-height': process
+    },
+    postcssPlugin: 'postcss-100vh-fix'
   }
 }
 module.exports.postcss = true

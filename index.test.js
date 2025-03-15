@@ -1,14 +1,16 @@
+let { equal } = require('node:assert')
+let { test } = require('node:test')
 let postcss = require('postcss')
 
 let plugin = require('./')
 
 function run (input, output) {
   let result = postcss([plugin]).process(input, { from: undefined })
-  expect(result.css).toEqual(output)
-  expect(result.warnings()).toHaveLength(0)
+  equal(result.css, output)
+  equal(result.warnings(), 0)
 }
 
-it('adds -webkit-fill-available', () => {
+test('adds -webkit-fill-available', () => {
   run(
     '@media (max-width: 600px) { body { height: 100vh } }',
     '@media (max-width: 600px) { body { height: 100vh } ' +
@@ -17,7 +19,7 @@ it('adds -webkit-fill-available', () => {
   )
 })
 
-it('supports min-height', () => {
+test('supports min-height', () => {
   run(
     '.min { min-height: 100vh }',
     '.min { min-height: 100vh }\n' +
@@ -26,7 +28,7 @@ it('supports min-height', () => {
   )
 })
 
-it('supports max-height', () => {
+test('supports max-height', () => {
   run(
     '.max { max-height: 100vh }',
     '.max { max-height: 100vh }\n' +
@@ -35,7 +37,7 @@ it('supports max-height', () => {
   )
 })
 
-it('inherits !important flag', () => {
+test('inherits !important flag', () => {
   run(
     '.max { max-height: 100vh !important }',
     '.max { max-height: 100vh !important }\n' +
@@ -44,6 +46,6 @@ it('inherits !important flag', () => {
   )
 })
 
-it('ignores non-100vh height', () => {
+test('ignores non-100vh height', () => {
   run('body { max-height: 100% }', 'body { max-height: 100% }')
 })
